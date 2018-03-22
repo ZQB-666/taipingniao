@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 10rem;
+    margin:0 auto;
+    background: #f5f5f5;
+}
+/*头部开始*/
+header .tru{
+    position: relative;
+    width: 10rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    background: #de06a5;
+}
+header .tru a{
+    position: absolute;
+    left: 0.2rem;
+}
+header .tru span{
+    width: 10rem;
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+[data-dpr="2"] header .tru span{
+    font-size: 40px;
+}
+[data-dpr="3"] header .tru span{
+    font-size: 60px;
+}
+.iconfont{
+    font-size: 0.6rem;
+    color: #fff;
+}
+/*头部结束*/
+
+
+/*user_zone部分开始*/
+.user_zone{
+    width: 10rem;
+    height: 3.6rem;
+    line-height: 3.6rem;
+    background: url("../img/bggr.jpg")no-repeat;
+    background-size: 100% 100%;
+}
+.user_zone .detail{
+
+    padding-top: 0.5rem;
+}
+.user_zone .detail .pic_default{
+    width: 2.28rem;
+    height: 2.28rem;
+    margin: auto;
+    background: url("../img/head.jpg")no-repeat;
+    background-size: contain;
+    border:5px solid #fff;
+    border-radius: 50%;
+
+}
+/*user_zone部分结束*/
+
+
+.con{
+    overflow: hidden;
+    padding: 0.2rem 0;
+}
+.con .box{
+    overflow: hidden;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0.15rem;
+    background: #fff;
+}
+.con .box .list{
+    overflow: hidden;
+    position: relative;
+    padding: 0 0.3rem 0 0.2rem;
+    height: 0.533rem;
+}
+.con .box .list a{
+    display: block;
+    line-height: 0.533rem;
+    background: url(../img/more_icon.png) no-repeat right center;
+    font-size: 14px;
+    color: #323232;
+}
+[data-dpr="2"] .con .box .list a{
+    font-size: 28px;
+}
+[data-dpr="3"] .con .box .list a{
+    font-size: 42px;
+}
+
+
+.con .order{
+    height: 1.866rem;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 0.2rem;
+    background: #fff;
+    padding: 0 0.133rem;
+}
+
+.con .order a{
+    width: 20%;
+    display: block;
+    float: left;
+    color: #646464;
+    font-size: 12px;
+    line-height: 0.32rem;
+    text-align: center;
+    padding: 1.2rem 0 0.346rem;
+    position: relative;
+}
+[data-dpr="2"] .con .order a{
+    font-size: 24px;
+}
+[data-dpr="3"] .con .order a{
+    font-size: 36px;
+}
+.con .order a:nth-child(1){
+    background: url("../img/beforePay.png")center 0.146rem no-repeat;
+    background-size: 40% 40%;
+}
+.con .order a:nth-child(2){
+    background: url("../img/beforeCar.png")center 0.173rem no-repeat;
+    background-size: 40% 40%;
+}
+.con .order a:nth-child(3){
+    background: url("../img/checkSure.png")center 0.186rem no-repeat;
+    background-size: 40% 40%;
+}
+.con .order a:nth-child(4){
+    background: url("../img/beforeComment.png")center 0.173rem no-repeat;
+    background-size: 40% 40%;
+}
+.con .order a:nth-child(5){
+    background: url("../img/checkCancel.png")center 0.173rem no-repeat;
+    background-size: 40% 40%;
+}
+
+
+.con .box1{
+    overflow: hidden;
+    position: relative;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0 0.5rem;
+    background: #fff;
+}
+.con .box1 .list{
+    overflow: hidden;
+    position: relative;
+    padding: 0 0.066rem 0 0.066rem;
+    border-bottom: 1px solid #dcdcdc;
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 12px;
+}
+.con .box1 .list img{
+    position: absolute;
+    left: 0;
+    top: 0.21rem;
+    display: block;
+    width: 0.586rem;
+    height: 0.586rem;
+}
+.con .box1 .list a{
+    display: block;
+    line-height: 1rem;
+    padding: 0 0.066rem 0 0.7rem ;
+    background: url(../img/more_icon.png) no-repeat right center;
+    color: #323232;
+    font-size: 14px;
+}
+[data-dpr="2"] .con .box1 .list a{
+    font-size: 28px;
+}
+[data-dpr="3"] .con .box1 .list a{
+    font-size: 42px;
+}
+
+

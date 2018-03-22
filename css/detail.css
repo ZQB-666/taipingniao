@@ -1,0 +1,491 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 10rem;
+    margin:0 auto;
+}
+
+/*头部开始*/
+.product{
+    width: 10rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #de06a5;
+    position: fixed;
+    z-index: 10;
+}
+.product a{
+    display: inline-block;
+    text-align: center;
+}
+.product a:nth-child(1){
+    width: 1.5rem;
+}
+.product a:nth-child(2){
+    width: 6.6rem;
+    color: #ffffff;
+    font-size: 16px;
+}
+[data-dpr="2"] .product a:nth-child(2){
+    font-size: 32px;
+}
+[data-dpr="3"] .product a:nth-child(2){
+    font-size: 48px;
+}
+.product a:nth-child(3){
+    width: 1.5rem;
+
+}
+
+.icon-jiantou4{
+    font-size: 20px;
+    color: #fff;
+}
+[data-dpr="2"] .icon-jiantou4{
+    font-size:40px;
+}
+[data-dpr="3"] .icon-jiantou4{
+    font-size: 60px;
+}
+.product a .icon-gouwuche{
+    font-size: 0.6rem;
+    color: #fff;
+}
+/*头部结束*/
+
+/*轮播图开始*/
+.product-flash{
+    padding-top: 1rem;
+    width: 10rem;
+}
+.product-flash .swiper-container img{
+    width: 10rem;
+}
+/*轮播图结束*/
+
+
+/*产品名称开始*/
+.product-name{
+    padding-top: 0.3rem;
+    width: 10rem;
+    height: 1rem;
+}
+.product-name a{
+    padding-left: 0.3rem;
+    font-weight: 500;
+    font-size: 17px;
+    color: #404040;
+}
+[data-dpr="2"] .product-name a{
+    font-size: 34px;
+}
+[data-dpr="3"] .product-name a{
+    font-size: 51px;
+}
+/*产品名称结束*/
+
+
+/*产品价格开始*/
+.price-box{
+    padding-top: 0.3rem;
+    width: 10rem;
+    height: 1.5rem;
+}
+.price-box p{
+    float: left;
+    font-size: 14px;
+}
+[data-dpr="2"] .price-box p{
+    font-size: 28px;
+}
+[data-dpr="3"] .price-box p{
+    font-size: 42px;
+}
+.price-box p:nth-child(1){
+    padding-left: 0.3rem;
+    width: 3.3rem;
+    height: 1rem;
+
+}
+
+.price-box p:nth-child(2){
+    width: 2rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    background: red;
+    color: #fff;
+    border-radius: 0.3rem;
+}
+.price-box p:nth-child(3){
+    width: 4.7rem;
+    height: 1rem;
+    line-height: 1rem;
+    float: right;
+    padding-right: 0.3rem;
+    text-align: right;
+}
+/*产品价格结束*/
+
+
+/*产品提示开始*/
+.product-tips{
+    height: 1rem;
+    padding-left: 0.3rem;
+}
+.product-tips span{
+    width: 1.5rem;
+    float: left;
+    border:1px solid #0099FF;
+    padding: 0.1rem 0.3rem;
+    color: #0099FF;
+    border-radius: 0.1rem;
+    font-size: 12px;
+}
+[data-dpr="2"] .product-tips span{
+    font-size: 24px;
+}
+[data-dpr="3"] .product-tips span{
+    font-size: 36px;
+}
+.product-tips  p{
+    padding-left: 0.5rem;
+    float: left;
+    width: 8rem;
+    height: 1rem;
+    padding-top: 0.05rem;
+    font-size: 14px;
+}
+[data-dpr="2"] .product-tips  p{
+    font-size: 28px;
+}
+[data-dpr="3"] .product-tips  p{
+    font-size: 42px;
+}
+/*产品提示结束*/
+
+
+/*颜色/尺码开始*/
+.product-color-size::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+.product-color-size{
+    width: 10rem;
+}
+.product-color-size h2{
+    width: 10rem;
+    padding:0 0.2rem;
+    font-size: 15px;
+    border-top:1px solid #5D656B
+}
+[data-dpr="2"] .product-color-size h2{
+    font-size: 30px;
+}
+[data-dpr="3"] .product-color-size h2{
+    font-size: 45px;
+}
+
+.product-color::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+.product-color-size ul.product-color{
+    padding-left:0.02rem;
+    padding-right: 0.02rem;
+}
+.product-color-size ul.product-color li{
+    width: 3.3rem;
+    float: left;
+}
+.product-color-size ul.product-color li a{}
+.product-color-size ul.product-color li a img{
+    width: 3.33rem;
+    padding:0.05rem 0.1rem;
+}
+.product-color-size .product-siz{
+    width: 10rem;
+    height: 2rem;
+}
+.product-color-size .product-siz ul{
+    margin:0 0.1rem;
+}
+.product-color-size .product-siz ul li{
+    width: 3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    display: inline-block;
+
+}
+.product-color-size .product-siz ul li a:hover{
+    background: #666;
+    color: #fff;
+}
+.product-color-size .product-siz ul li a{
+    border: 1px solid #5D656B;
+    padding:0.05rem 0.1rem;
+    font-size: 12px;
+    color: #000;
+}
+[data-dpr="2"] .product-color-size .product-siz ul li a{
+    font-size: 24px;
+}
+[data-dpr="3"] .product-color-size .product-siz ul li a{
+    font-size: 36px;
+}
+/*颜色/尺码结束*/
+
+/*产品数量开始*/
+#app{
+    width: 9.8rem;
+    height: 1.1rem;
+    margin:0 0.2rem;
+}
+#app h3{
+    width: 1.2rem;
+    height: 1rem;
+    /*line-height: 1rem;*/
+    float: left;
+    font-size: 15px;
+}
+[data-dpr="2"] #app h3{
+    font-size: 30px;
+}
+[data-dpr="3"] #app h3{
+    font-size: 45px;
+}
+#app button{
+    width: 0.4rem;
+    height: 0.5rem；
+}
+
+[data-dpr="2"] #app button{
+    font-size: 30px;
+}
+[data-dpr="3"] #app button{
+    font-size: 45px;
+}
+/*产品数量结束*/
+
+/*配送地址开始*/
+.product-address{
+    height: 1.3rem;
+    margin:0 0.3rem;
+}
+.product-address p{}
+
+.product-address p:nth-child(1){
+    font-size: 14px;
+}
+[data-dpr="2"] .product-address p:nth-child(1){
+    font-size: 28px;
+}
+[data-dpr="3"] .product-address p:nth-child(1){
+    font-size: 42px;
+}
+.product-address p:nth-child(2){
+    padding-top: 0.2rem;
+    color: #585c64;
+    font-size: 12px;
+}
+
+[data-dpr="2"] .product-address p:nth-child(2){
+    font-size: 24px;
+}
+[data-dpr="3"] .product-address p:nth-child(2){
+    font-size: 36px;
+}
+.product-address .iconfont{
+    font-size: 0.4rem;
+    padding-top: 5px;
+}
+/*配送地址结束/
+
+/*产品服务开始*/
+.product-service{
+    margin:0 0.3rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+.product-service ul{
+    float: left;
+    width: 8rem;
+
+}
+.product-service ul li{
+    display: inline-block;
+    margin-right: 0.6rem;
+}
+.product-service ul li a{
+    font-size: 12px;
+    color: #585c64;
+}
+[data-dpr="2"] .product-service ul li a{
+    font-size: 24px;
+}
+[data-dpr="3"] .product-service ul li a{
+    font-size: 36px;
+}
+
+.product-service span{
+    float: right;
+}
+/*产品服务结束*/
+
+
+/*产品信息开始*/
+.product-info::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+.product-info{
+    border-top:1px solid #5D656B;
+    width: 10rem;
+    margin:0.5rem 0;
+}
+.product-info h1{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin:0 0.3rem;
+    font-size: 20px;
+    margin-bottom: 0.3rem;
+    padding-top: 0.3rem;
+    font-weight: 600;
+}
+[data-dpr="2"] .product-info h1{
+    font-size: 40px;
+}
+[data-dpr="3"] .product-info h1{
+    font-size: 60px;
+}
+
+
+
+table{
+    width: 9.5rem;
+    margin:0 auto;
+}
+table>tbody tr td:nth-child(1){
+    width: 2rem;
+    vertical-align: top;
+}
+
+table>tbody tr td:nth-child(2){
+    width: 7.5rem;
+}
+table>tbody tr{
+    line-height: 0.8rem;
+}
+table>tbody tr td{
+    font-size: 14px;
+}
+[data-dpr="2"] table>tbody tr td{
+    font-size: 28px;
+}
+[data-dpr="3"] table>tbody tr td{
+    font-size: 42px;
+}
+/*产品信息结束*/
+
+/*产品图片开始*/
+.product-img{
+    width: 10rem;
+    border-top:1px solid #5D656B;
+}
+.product-img h1{
+    margin:0 0.3rem;
+    height: 1rem;
+    line-height: 1rem;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0.3rem;
+}
+[data-dpr="2"] .product-img h1{
+    font-size: 40px;
+}
+[data-dpr="3"] .product-img h1{
+    font-size: 60px;
+}
+.product-img .product-img-body{
+    width: 10rem;
+}
+.product-img .product-img-body img{
+    width: 100%;
+    transform: scale(1, 1);
+}
+/*产品图片结束*/
+
+/*footer开始*/
+footer .bottom{
+    width: 10rem;
+    height: 1.2rem;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index:10;
+    border-top:1px solid #eee;
+}
+footer .bottom .left{
+    margin-left: 0.2rem;
+    float: left;
+    width: 1.8rem;
+    height: 1.2rem;
+    text-align: center;
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+
+}
+footer .bottom  a{
+    font-size: 15px;
+}
+[data-dpr="2"] footer .bottom  a{
+    font-size: 30px;
+}
+[data-dpr="3"] footer .bottom  a{
+    font-size: 45px;
+}
+footer .bottom .left i{
+
+}
+
+footer .bottom .right{
+    float: right;
+    width: 8rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+footer .bottom .right a{
+    text-align: center;
+    color: #fff;
+    padding: 0.08rem 0.94rem;
+
+}
+.icon-kefuwangwang{
+    font-size: 20px;
+}
+[data-dpr="2"] .icon-kefuwangwang{
+    font-size: 40px;
+}
+[data-dpr="3"] .icon-kefuwangwang{
+    font-size: 60px;
+}
+footer .bottom .right a:nth-child(1){
+    float: right;
+    background: #dd3d97;
+
+}
+footer .bottom .right a:nth-child(2){
+    float: right;
+    background: #ff0036;
+
+}
+
+/*footer结束*/

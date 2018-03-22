@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>太平鸟-首页</title>
+    <!--引入flexible插件-->
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <!--引入矢量图标css-->
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!--引入css-->
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<div id="page"></div>
+
+
+
+
+<!--header部分开始-->
+<header>
+    <div class="header-nav">
+        <div class="logo">
+            <a href="javascript:;">
+                <img src="img/lg.png" alt="logo">
+            </a>
+        </div>
+        <div class="header-nav-head">
+            <a  href="login.html">
+                <img src="img/head.jpg" alt="">
+            </a>
+            <p>
+                <a  href="login.html">加入</a>
+                /
+                <a  href="login.html">登录 太平鸟</a>
+            </p>
+        </div>
+        <form action="" method="get">
+            <div class="search">
+                <input type="text" placeholder="输入关键词">
+                <a href="javascript:;"><i class="iconfont icon-fangdajing"></i></a>
+            </div>
+        </form>
+
+        <ul>
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">热潮新品</a></li>
+            <li><a href="javascript:;">时尚女装</a></li>
+            <li><a href="javascript:;">风尚男装</a></li>
+            <li><a href="javascript:;">甜美乐町</a></li>
+            <li><a href="javascript:;">乐趣童装</a></li>
+            <li><a href="javascript:;">街头MG</a></li>
+        </ul>
+    </div>
+    <div class="tru">
+        <button class="iconfont icon-gengduo more to"></button>
+        <div class="logo">
+            <a href="javascript:;">
+                <img src="img/lg.png" alt="logo">
+            </a>
+        </div>
+        <div class="right">
+            <a href="login.html">
+                <i class="iconfont icon-wode"></i>
+            </a>
+           <!-- <a href="javascript:;">
+                <i class="iconfont icon-gouwuche"></i>
+            </a>-->
+        </div>
+    </div>
+
+</header>
+<!--header部分结束-->
+<!--main部分开始-->
+<div class="main">
+<!--轮播图开始-->
+    <!--引入swiper.css-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <div class="flash">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/lb1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/lb2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/lb3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/lb4.jpg" alt=""></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!--引入swiper.js-->
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.flash .swiper-container', {
+            loop: true,
+            autoplay: true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination'
+            }
+        })
+    </script>
+<!--轮播图结束-->
+
+    <!--热销潮品开始-->
+    <div class="hot-tide-goods">
+        <div class="h-title">
+            <h1>热销潮品</h1>
+        </div>
+        <div class="slider_hot">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <img src="img/r7.jpg" alt="">
+                            <div class="bottom">
+                                <p>露肩提花礼服</p>
+                                <span>￥299</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/r8.jpg" alt="">
+                            <div class="bottom">
+                                <p>镂空无袖连衣裙</p>
+                                <span>￥219</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/r9.jpg" alt="">
+                            <div class="bottom">
+                                <p>小细格肩部镂空无袖连衣裙</p>
+                                <span>￥219</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <img src="img/r4.jpg" alt="">
+
+                            <div class="bottom">
+                                <p>长款风衣</p>
+                                <span>￥459</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/r5.jpg" alt="">
+                            <div class="bottom">
+                                <p>牛仔连衣裙</p>
+                                <span>￥299</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/r6.jpg" alt="">
+                            <div class="bottom">
+                                <p>贴布外套</p>
+                                <span>￥429</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <img src="img/r2.jpg" alt="">
+
+                            <div class="bottom">
+                                <p>钢琴印花短裙</p>
+                                <span>￥299</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/r1.jpg" alt="">
+                            <div class="bottom">
+                                <p>红色任物T恤</p>
+                                <span>￥129</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/r3.jpg" alt="">
+                            <div class="bottom">
+                                <p>嘴唇绣花满身衬衫</p>
+                                <span>￥139</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li>
+                            <img src="img/r10.jpg" alt="">
+
+                            <div class="bottom">
+                                <p>韩版黑色修身茄克</p>
+                                <span>￥299</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/r11.jpg" alt="">
+                            <div class="bottom">
+                                <p>男士修身时尚茄克</p>
+                                <span>￥299</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/r12.jpg" alt="">
+                            <div class="bottom">
+                                <p>黑白色格子修身茄克衫</p>
+                                <span>￥3599</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+           <!-- <div class="swiper-pagination"></div>-->
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!--引入swiper.js-->
+        <script src="js/swiper.min.js"></script>
+        <script>
+            var mySwiper = new Swiper('.slider_hot .swiper-container', {
+                loop: true,
+                autoplay: true,
+                /*// 如果需要分页器
+                pagination: {
+                    el: '.swiper-pagination'
+                },*/
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            })
+        </script>
+        </div>
+    </div>
+    <!--热销潮品结束-->
+
+    <!--时尚女装开始-->
+    <div class="fashion-women">
+        <div class="h-title">
+            <h1>时尚女装</h1>
+        </div>
+        <div class="nav-div1">
+            <div class="nav-div2">
+                <ul>
+                    <li><a href="javascript:;">秋季新品</a></li>
+                    <li><a href="javascript:;">连衣裙</a></li>
+                    <li><a href="javascript:;">衬衫</a></li>
+                    <li><a href="javascript:;">蕾丝/雪纺</a></li>
+                    <li><a href="javascript:;">外套</a></li>
+                    <li><a href="javascript:;">针织衫</a></li>
+                    <li><a href="javascript:;">半身裙</a></li>
+                    <li><a href="javascript:;">裤装</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flash-women">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/nvz.jpg!75.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/nvz1.jpg!75.webp" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ls.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <script>
+            var mySwiper = new Swiper ('.flash-women .swiper-container', {
+                loop: true,
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            })
+        </script>
+
+        <div class="fashio-bottom">
+            <div class="center">
+                <div class="left">
+                    <img src="img/lsb.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">基本款撞衫衬衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥189</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/lsb1.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">不对称款连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥309</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/lsb2.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">长款无袖衬衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥359</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/lsb3.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">无袖衬衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥239</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/lsb4.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">贴布绣上衣</a></p>
+                        <span><!--<del>￥399</del>--> ￥179</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/lsb5.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">大V领连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥299</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/lsb6.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">牛仔半裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥249</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/lsb7.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">宽松上衣</a></p>
+                        <span><!--<del>￥399</del>--> ￥279</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--时尚女装结束-->
+
+
+    <!--风尚男装开始-->
+    <div class="fashion-women">
+        <div class="h-title">
+            <h1>风尚男装</h1>
+        </div>
+        <div class="nav-div1">
+            <div class="nav-div2">
+                <ul>
+                    <li><a href="javascript:;">春季热销</a></li>
+                    <li><a href="javascript:;">长袖衬衫</a></li>
+                    <li><a href="javascript:;">毛衣</a></li>
+                    <li><a href="javascript:;">夹克</a></li>
+                    <li><a href="javascript:;">西服</a></li>
+                    <li><a href="javascript:;">皮衣</a></li>
+                    <li><a href="javascript:;">休闲裤</a></li>
+                    <li><a href="javascript:;">冬装清仓</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flash-women">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/nz.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/nz1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/nz.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <script>
+            var mySwiper = new Swiper ('.flash-women .swiper-container', {
+                loop: true,
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            })
+        </script>
+
+        <div class="fashio-bottom">
+            <div class="center">
+                <div class="left">
+                    <a href="detail.html">
+                    <img src="img/detail1.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="detail.html">男士羽绒服</a></p>
+                        <span><!--<del>￥399</del>--> ￥129</span>
+                    </div>
+                    </a>
+                </div>
+                <div class="right">
+                    <img src="img/fsnz2.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">中袖衬衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥139</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/fsnz3.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">T恤</a></p>
+                        <span><!--<del>￥399</del>--> ￥159</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/fsnz4.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">长袖衬衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥159</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/fsnz5.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">中袖衬衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥199</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/fsnz6.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">衬衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥159</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/fsnz7.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">T恤</a></p>
+                        <span><!--<del>￥399</del>--> ￥129</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/fsnz8.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">T恤</a></p>
+                        <span><!--<del>￥399</del>--> ￥139</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--风尚男装结束-->
+
+    <!--甜美乐町开始-->
+    <div class="fashion-women">
+        <div class="h-title">
+            <h1>甜美乐町</h1>
+        </div>
+        <div class="nav-div1">
+            <div class="nav-div2">
+                <ul>
+                    <li><a href="javascript:;">秋装新品</a></li>
+                    <li><a href="javascript:;">连衣裙</a></li>
+                    <li><a href="javascript:;">雪纺衫</a></li>
+                    <li><a href="javascript:;">短外套</a></li>
+                    <li><a href="javascript:;">卫衣百搭</a></li>
+                    <li><a href="javascript:;">上衣</a></li>
+                    <li><a href="javascript:;">半身裙</a></li>
+                    <li><a href="javascript:;">裤装</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flash-women">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/let1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/let2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/ls1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+        <script>
+            var mySwiper = new Swiper ('.flash-women .swiper-container', {
+                loop: true,
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            })
+        </script>
+
+        <div class="fashio-bottom">
+            <div class="center">
+                <div class="left">
+                    <img src="img/tmld1.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">网纱拼接连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥199</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/tmld2.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">背带绣花短裤</a></p>
+                        <span><!--<del>￥399</del>--> ￥199</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/tmld3.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">吊带牛仔背带裤</a></p>
+                        <span><!--<del>￥399</del>--> ￥199</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/tmld4.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">蝙蝠袖淑女上衣</a></p>
+                        <span><!--<del>￥399</del>--> ￥179</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/tmld5.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">五角星条纹连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥199</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/tmld6.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">小鳄鱼印花连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥179</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/tmld7.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">无袖网眼长衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥199</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/tmld8.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">小鳄鱼一字连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥219</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--甜美乐町结束-->
+
+    <!--乐趣童装开始-->
+    <div class="fashion-women">
+        <div class="h-title">
+            <h1>乐趣童装</h1>
+        </div>
+        <div class="nav-div1">
+            <div class="nav-div2">
+                <ul>
+                    <li><a href="javascript:;">秋款上新</a></li>
+                    <li><a href="javascript:;">亲子搭配</a></li>
+                    <li><a href="javascript:;">男童上衣</a></li>
+                    <li><a href="javascript:;">男童外套</a></li>
+                    <li><a href="javascript:;">男童裤装</a></li>
+                    <li><a href="javascript:;">女童上衣</a></li>
+                    <li><a href="javascript:;">女童外套</a></li>
+                    <li><a href="javascript:;">女童裙装</a></li>
+                    <li><a href="javascript:;">女童裤装</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flash-women">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/tz1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/tz2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/tz3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/tz4.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+        <script>
+            var mySwiper = new Swiper ('.flash-women .swiper-container', {
+                loop: true,
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            })
+        </script>
+
+        <div class="fashio-bottom">
+            <div class="center">
+                <div class="left">
+                    <img src="img/lqtz1.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">线开衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥199</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/lqtz2.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">便服</a></p>
+                        <span><!--<del>￥399</del>--> ￥239</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/lqtz3.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">长袖开衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥159</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/lqtz4.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">线套衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥189</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/lqtz5.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">针织衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥219</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/lqtz6.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">茄克</a></p>
+                        <span><!--<del>￥399</del>--> ￥239</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/lqtz7.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">中袖长衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥179</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/lqtz8.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">风衣</a></p>
+                        <span><!--<del>￥399</del>--> ￥279</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--乐趣童装结束-->
+
+    <!--街头MG开始-->
+    <div class="fashion-women">
+        <div class="h-title">
+            <h1>街头MG</h1>
+        </div>
+        <div class="nav-div1">
+            <div class="nav-div2">
+                <ul>
+                    <li><a href="javascript:;">秋冬特惠</a></li>
+                    <li><a href="javascript:;">羽绒专区</a></li>
+                    <li><a href="javascript:;">棉服专区</a></li>
+                    <li><a href="javascript:;">大衣专区</a></li>
+                    <li><a href="javascript:;">温暖毛衣</a></li>
+                    <li><a href="javascript:;">休闲卫衣</a></li>
+                    <li><a href="javascript:;">裤装专区</a></li>
+                    <li><a href="javascript:;">牛仔裤专区</a></li>
+                    <li><a href="javascript:;">短裤专区</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flash-women">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/mg1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/mg2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/mg3.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+        <script>
+            var mySwiper = new Swiper ('.flash-women .swiper-container', {
+                loop: true,
+                // 如果需要前进后退按钮
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
+                }
+            })
+        </script>
+
+        <div class="fashio-bottom">
+            <div class="center">
+                <div class="left">
+                    <img src="img/jtmg1.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">闪耀字母套衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥169</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/jtmg2.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">露肩爱心线套衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥169</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/jtmg3.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">鲨鱼满印连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥149</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/jtmg4.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">竖条镂空短线衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥129</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/jtmg5.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">烫金蝙蝠袖线衫</a></p>
+                        <span><!--<del>￥399</del>--> ￥199</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/jtmg6.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">镂空棕榈树背心</a></p>
+                        <span><!--<del>￥399</del>--> ￥159</span>
+                    </div>
+                </div>
+                <div class="left">
+                    <img src="img/jtmg7.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">字母直筒连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥179</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="img/jtmg8.jpg" alt="">
+                    <div class="bottom">
+                        <p><a href="javascript:;">大花满印连衣裙</a></p>
+                        <span><!--<del>￥399</del>--> ￥209</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--街头MG结束-->
+
+    <!--footer开始-->
+    <footer>
+        <div class="footer-top">
+            <ul>
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">联系我们</a></li>
+                <li><a href="javascript:;">友情链接</a></li>
+                <li><a href="javascript:;">商务合作</a></li>
+            </ul>
+            <p><a href="javascript:;">浙ICP备07505741号</a>Copyright@2008-2013,www.pb89.com,All Rights Reserved     </p>
+        </div>
+    </footer>
+    <!--footer结束-->
+
+</div>
+<!--main部分结束-->
+
+<!--bottom部分开始-->
+<div id="bottom">
+
+    <a href="javascript:;">
+        <i class="iconfont icon-shouye"></i>
+        <p>首页</p>
+    </a>
+
+    <a href="javascript:;">
+        <i class="iconfont icon-faxian"></i>
+        <p>发现</p>
+    </a>
+
+
+    <a href="javascript:;">
+        <i class="iconfont icon-wuliu"></i>
+        <p>物流</p>
+
+    </a>
+
+    <a href="cart.html">
+        <i class="iconfont icon-gouwuche"></i>
+        <p>购物车</p>
+    </a>
+
+
+    <a href="login.html">
+        <i class="iconfont icon-wode"></i>
+        <p>我的</p>
+    </a>
+
+</div>
+<!--bottom部分结束-->
+</body>
+<script src="js/script.js"></script>
+</html>
