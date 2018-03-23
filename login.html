@@ -25,21 +25,118 @@
             </a>
         </div>
         <!--头部结束-->
-        <div class="login-bottom">
-            <form action="" method="post">
-                <input type="text" placeholder="邮箱/手机号">
-                <input type="text" placeholder="密码">
-                <input type="text" placeholder="确认密码">
-                <button><span>男</span></button>
-                <button><span>女</span></button>
-                <input class="yzmk" type="text" placeholder="验证码">
-                <input class="yzm" type="text" placeholder="ABCD">
-                <input class="ckit" name="ckit" type="checkbox" value="a" />
-                <span class="ckit-w">我已看过并接受 <a href="">“用户协议”</a></span>
-                <input class="zhuce" type="button" value="立即注册">
-                <p class="yyzh"><a href="denglu.html">已有账号，去登录</a></p>
-            </form>
-        </div>
+
+        <form action="#" method="post">
+        <p class="p2">
+            <label>用户名：</label>
+            <input id="name" onkeyup="name1()" onfocus="name1()" type="text" placeholder="您的账户名和登录名">
+        </p>
+        <p class="p1" id="namep"></p>
+        <p class="p2">
+            <label>密码：</label>
+            <input id="pass" onkeyup="pass1()" onfocus="pass1()" type="password" placeholder="请设置一个密码">
+        </p>
+        <p class="p1" id="pawp1"></p>
+        <p class="p2">
+            <label>确认密码：</label>
+            <input id="pass2" onkeyup="pa2()" onfocus="pa2()" type="password" placeholder="请设置一个密码">
+        </p>
+        <p class="p1" id="pawp2"></p>
+        <p class="p2">
+            <label>手机号：</label>
+            <input id="shouji" onkeyup="shouji1()" onfocus="shouji1()" type="text" placeholder="请输入手机号">
+        </p>
+        <p class="p1" id="shoujip"></p>
+        <p class="p2">
+            <label>验证码：</label>
+            <input id="yanzheng" onblur="yz()" type="text" placeholder="请输入手机号"> <a href="javascript:;" onclick="huoqu()" id="button">获取验证码</a></p>
+        <p class="p1" id="yanzhengp"></p>
+        <p class=""><input class="ckit" name="ckit" type="checkbox" value="a" /><span class="ckit-w">我已看过并接受 <a href="">“用户协议”</a></span></p>
+        <p class="p3">
+        <input type="button" value="立即注册"></p>
+        <p class="yyzh"><a href="denglu.html">已有账号，去登录</a></p>
+    </form>
+
     </div>
 </body>
+<script>
+    function name1() {
+        var n = document.getElementById("name").value;
+        if (n.length == 0) {
+            document.getElementById("namep").innerHTML = "<i></i>支持中文、字母、数字的2-18个字符";
+        }
+        else if (n.length < 2 || n.length > 18) {
+            document.getElementById("namep").innerHTML = "<i class='i2'></i>格式错误,仅支持中文、字母、数字的2-18个字符";
+        }
+        else {
+            document.getElementById("namep").innerHTML = "<i class='i3'></i>对了";
+        }
+    }
+
+    function pass1() {
+        var pa = document.getElementById("pass").value;
+        var aa = /^[a-zA-Z]\w{7,17}$/;
+        if (pa == 0) {
+            document.getElementById("pawp1").innerHTML = "<i></i>建议使用字母数字两种组合8-18位字符"
+        }
+        else if (!aa.test(pa)) {
+            document.getElementById("pawp1").innerHTML = "<i class='i2'></i>字母开头字符在8-18位之间";
+        }
+        else {
+            return document.getElementById("pawp1").innerHTML = "<i class='i3'></i>对了";
+        }
+    }
+
+    function pa2() {
+        var pa = document.getElementById("pass").value;
+        var pa1 = document.getElementById("pass2").value;
+        if (pa1 == 0) {
+            document.getElementById("pawp2").innerHTML = "<i></i>请再次输入密码"
+        }
+        else if (pa != pa1) {
+            document.getElementById("pawp2").innerHTML = "<i class='i2'></i>密码不一致";
+        }
+        else {
+            return document.getElementById("pawp2").innerHTML = "<i class='i3'></i>密码一致";
+        }
+    }
+
+    function shouji1() {
+        var s = document.getElementById("shouji").value;
+        var a = /^1\d{10}$/;
+        if (s == 0) {
+            document.getElementById("shoujip").innerHTML = "<i></i>请输入手机号"
+        }
+        else if (!a.test(s)) {
+            document.getElementById("shoujip").innerHTML = "<i class='i2'></i>请填写正确手机号"
+        }
+        else {
+            document.getElementById("shoujip").innerHTML = "<i class='i3'></i>可以"
+        }
+    }
+    
+    var code = null;
+    var random = null;
+
+    function huoqu() {
+        var random = parseInt(Math.random() * 9000 + 1000);
+        alert(random)
+        document.getElementById("button").innerHTML = random;
+    }
+
+    function yz() {
+        var n = document.getElementById("yanzheng").value;
+        var a = document.getElementById("button").innerHTML;
+        alert(n)
+        if (n.length == 0) {
+            document.getElementById("yanzhengp").innerHTML = "<i></i>请输入验证码";
+        }
+        else if (n != a) {
+            document.getElementById("yanzhengp").innerHTML = "<i class='i2'></i>您输入的验证码不正确".fontcolor("red");
+        }
+        else {
+            document.getElementById("yanzhengp").innerHTML = "<i class='i3'></i>对了".fontcolor("green");
+        }
+    }
+</script>
 </html>
