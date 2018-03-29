@@ -16,6 +16,14 @@ $(".more").click(function(){
 });
 
 
+/*跳转*/
+$(".tiaoz").click(function(){
+    $(".header-nav").animate({"margin-left":"-7.5rem"});
+    $(".tru").animate({"margin-left":"0"});
+    $(".main").animate({"margin-left":"0"});
+})
+
+
 
 /*返回顶部jQuery*/
 function gotoTop(min_height) {
